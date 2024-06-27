@@ -65,6 +65,6 @@ while answer != 'n':
     if not check_win(table):
         print('\033[2KНичья!')
     else:
-        print('\033[2KПобеда ноликов!' if i % 2 == 0 else '\033[2KПобеда крестиков!')
+        print('\033[2KПобеда ноликов!' if x_or_o else '\033[2KПобеда крестиков!')
     answer = input('Повторить? (y/n):')
     print('\033[A\033[2K\r')
